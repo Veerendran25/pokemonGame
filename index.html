@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonGame Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="web">
+
+    <header class="header">
+        <div class="leftpartHeader">
+            <img src="favicon.png" alt="pokeball.png" id="logo">
+            <h2 class="heading">Pokemon card battle</h2>
+        </div>
+        <div class="rightpartHeader">
+            <h2>Player points: <span id="playerPoint">0</span></h2>
+            <h2>Computer points: <span id="compPoint">0</span></h2>
+        </div>
+    </header>
+    <main class="mainPage">
+        <div class="container" id="mainContainer">
+            <div class="c1" id="cardContainer">
+            <!-- <div class="Playercard" id="p">
+                <h1>PLAYER</h1>
+                <div class="c">
+                    <div class="title">Pokemon name</div>
+                <div class="card">
+                    <div class="left-side">
+                        <p id="health">HP-55</p>
+                        <p id="weight">W-88</p>
+                        <p id="height">H-6</p>
+                    </div>
+                    <div class="middle"><img src="favicon.png" alt="pokemon image" id="image"></div>
+                    <div class="right-side">
+                        <p id="attack">A-55</p>
+                        <p id="speed">S-10</p>
+                        <p id="Defence">D-88</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="vs">
+                    <h1>VS</h1>
+            </div>-->
+            <!--<div class="Computercard" id="c">
+                <h1>COMPUTER</h1>
+                <div class="c">
+                    <div class="title">Pokemon name</div>
+                <div class="card">
+                    <div class="left-side">
+                        <p id="health">HP-55</p>
+                        <p id="weight">W-88</p>
+                        <p id="height">H-6</p>
+                    </div>
+                    <div class="middle"><img src="favicon.png" alt="pokemon image" id="image"></div>
+                    <div class="right-side">
+                        <p id="attack">A-55</p>
+                        <p id="speed">S-10</p>
+                        <p id="Defence">D-88</p>
+                    </div>
+                </div>
+                </div>
+        </div>-->
+        </div>
+        <div class="last">
+            <h2 id="playertext">Player wins!!!</h2>
+        <button onclick="retryFunction()" class="reset">&#8635;</button>
+        </div>
+
+        </div>
+
+
+
+        <!--first main page-->
+        <div class="selection" id="selectSlide">
+            <div class="info" id="i">
+                <label for="inputText" name="inputText">Enter pokemon name :</label>
+                <input type="text" id="inputText" class="text" >
+                <h2>Select the stat for your pokemon :</h2>
+                <div class="options">
+                <label for="Hp" name="Hp">Health (HP)</label>
+                <input type="radio" name="stat" id="HP" value="HP">
+                <label for="W" name="weight">Weight (W)</label>
+                <input type="radio" name="stat" id="W" value="W">
+                <label for="H" name="height">Height (H)</label>
+                <input type="radio" name="stat" id="H" value="H">
+                <label for="A" name="attack">Attack (A)</label>
+                <input type="radio" name="stat" id="A" value="A">
+                <label for="D" name="defence">Defence (D)</label>
+                <input type="radio" name="stat" id="D" value="D">
+                <label for="S" name="speed">Speed (S)</label>
+                <input type="radio" name="stat" id="S" value="S">
+                </div>
+                <br>
+                <button onclick="runMode()" class="submit">Play</button>
+            </div>
+            <div>
+            <button onclick="switchMode()" class="switch">switch mode</button>
+            </div>
+        </div>
+
+        <!--Mode 2-->
+        <div class="selection1" id="mode2">
+            <div class="info" id="i">
+                <label for="inputText" name="inputText">Enter pokemon name :</label>
+                <input type="text" id="inputText1" class="text" >
+                <h2>Stats for your pokemon :</h2>
+                <div class="options">
+                <label for="Hp" name="Hp">Health (HP)</label>
+                <label for="W" name="weight">Weight (W)</label>
+                <label for="H" name="height">Height (H)</label>
+                <label for="A" name="attack">Attack (A)</label>
+                <label for="D" name="defence">Defence (D)</label>
+                <label for="S" name="speed">Speed (S)</label>
+                </div>
+                <br>
+                <button onclick="runMode1()" class="submit">Play</button>
+            </div>
+            <div>
+            <button onclick="switchMode1()" class="switch">switch mode</button>
+            </div>
+        </div>
+    </main>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
