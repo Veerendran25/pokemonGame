@@ -303,7 +303,7 @@ function retryFunction() {
         el.classList.remove('selectedItemWon', 'selectedItemLoss');
     });
     document.querySelectorAll(".Playercard ,.vs,.Computercard").forEach(el=>el.remove())
-
+    document.getElementById("inputText1").value=""
     pointForPlayer=pointForPlayer
     pointForComputer=pointForComputer
     text.innerText = "";
@@ -312,21 +312,23 @@ function retryFunction() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //mode 2 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //for playing with all stats of the pokemon
